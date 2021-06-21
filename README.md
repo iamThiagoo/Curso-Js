@@ -7,3 +7,5 @@
 <div align="left">
   <p>Esse repositório é destinado ao curso de JavaScript que estou cursando nesse momento, estou sempre atualizando para que eu tenha acesso do que eu aprendi em outros dispositivos.</p>
 <//div>
+
+### Tempo codificado nesse repositório: &nbsp;  [![Curso-JS: Tempo de codificação](https://wakatime.com/badge/github/iamThiagoo/Curso-Js.svg)](https://wakatime.com/badge/github/iamThiagoo/Curso-Js)
