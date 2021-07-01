@@ -1,0 +1,120 @@
+:root{
+    --background-body: #0e0424;
+    --background-container: #f7f4f4;
+    --border-bottom: #42ad9c;
+    --text-color: rgb(21, 20, 97);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    outline: none;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body{
+    background: var(--background-body);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 55rem;
+    background: var(--background-container);
+    padding: 2rem;
+    border-radius: 0 1rem 1rem 1rem;
+    border: 3px solid black;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Sora', sans-serif;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+.container-texto{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Questrial', sans-serif;
+}
+
+.container-texto p{
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.imc, .exemploDeResultados{
+    border: 3px solid rgb(40, 9, 112);
+    border-radius: 1rem;
+    padding: 15px;
+}
+
+#calcule-anuncio{
+    margin: 2rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input{
+    width: 80%;
+    height: 4rem;
+    border: 0;
+    border-bottom: .2rem solid var(--border-bottom);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background: none;
+    color: var(--text-color);
+}
+
+#btn{
+    height: 5rem;
+    width: 80%;
+    margin: 1rem 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: rgb(20, 211, 195);;
+    border: 0;
+    border-radius: 1rem;
+    color: var(--text-color);
+    font-family: 'Questrial', sans-serif;
+    font-weight: bold;
+}
+
+#btn:hover{
+    background-color: rgb(28, 223, 203);
+    color: rgb(54, 20, 207);
+}

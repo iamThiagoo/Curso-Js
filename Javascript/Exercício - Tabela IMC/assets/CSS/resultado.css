@@ -1,0 +1,21 @@
+#resultado{
+    margin: 2rem 0;
+    padding: 0 5rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+.paragrafo-resultado, .paragrafo-error{
+    padding: 10px 20px;
+    border-radius: 1rem 0 1rem 1rem;
+}
+
+.paragrafo-resultado{
+    background-color: rgb(13, 230, 49);
+    color: rgb(0, 88, 34);
+}
+
+.paragrafo-error{
+    background-color: rgb(216, 66, 66);
+    color: rgb(80, 6, 6);
+}
