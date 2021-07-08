@@ -23,3 +23,14 @@ console.log(nivelUsuario);
 // OS DOIS PONTO (:) REPRESENTA FALSE E LOGO DEPOIS VOCÊ PRECISA DIGITAR O SEU BLOCO;
 
 // ALGO QUE ANTES USAVA 7 LINHAS, AGORA ESTÁ USANDO 3.
+
+
+// ATUALIZAÇÃO 08/07/2021:
+// É POSSÍVEL USAR O ELSE IF EM TERNÁRIO SEGUE O EXEMPLO:
+
+function numeros (primeiro, segundo){
+    return primeiro > segundo ? `O primeiro número (${primeiro}) é maior que o segundo (${segundo})` : primeiro === segundo ? `Os dois são idênticos!` : `O segundo número (${segundo}) é maior que o primeiro (${primeiro})`;
+} 
+console.log(numeros(800, 1600));
+
+// Observe que nós temos duas condições no nosso return: primeiro > segundo e primeiro === segundo, se não for nenhum desses dois quer dizer que então o segundo é maior. 
