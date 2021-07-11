@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #C6FFDD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    padding: 20px;  
+    width: 60%;
+    background-color: #ffd87e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 10px 10px 10px;
+    border: 3px solid black;
+}
+
+#container h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#container h2{
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+
+#buttons button{
+    padding: 15px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.iniciar{
+    background-color: rgb(88, 255, 163);
+}
+
+.iniciar:hover{
+    background-color: rgb(6, 124, 59);
+    color: white;
+}
+
+.pausar{
+    background-color:rgb(255, 66, 66);
+}
+
+.pausar:hover{
+    background-color:rgb(153, 15, 15);
+    color: white;
+}
+
+.zerar{
+    background-color: rgb(79, 176, 255);
+}
+
+.zerar:hover{
+    background-color: rgb(3, 91, 163);
+    color: white;
+}
+
+/* Classes usadas no JS*/
+.iniciado{
+    color: #2BC259;
+}
+
+.pausado{
+    color: #f64f59;
+}
