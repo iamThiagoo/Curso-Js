@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#171717), color-stop(#DA0037), to(#EDEDED));
+  background: linear-gradient(90deg, #171717, #DA0037, #EDEDED);
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .sr-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip-path: rect(0, 0, 0, 0);
+          clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body #container {
+  padding: 2vw;
+  width: 40%;
+  background: #fff6f6;
+  border: .3vw solid black;
+  border-radius: 0 1vw 1vw 1vw;
+}
+
+body #container #announced {
+  margin-bottom: 2vw;
+  text-align: center;
+  font-family: 'Zen Loop', cursive;
+}
+
+body #container #announced h1 {
+  font-size: 4vw;
+}
+
+body #container #announced h2 {
+  font-size: 2vw;
+}
+
+body #container .tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container .tasks #writeTasks {
+  margin-right: 1vw;
+  border-radius: 1vw;
+  padding: .8vw;
+  font-size: 1.5vw;
+  border: .1vw solid #DA0037;
+  background: #fff6f6;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 50%;
+}
+
+body #container .tasks #writeTasks::-webkit-input-placeholder {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body #container .tasks #writeTasks:-ms-input-placeholder {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body #container .tasks #writeTasks::-ms-input-placeholder {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body #container .tasks #writeTasks::placeholder {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body #container .tasks #addTasks {
+  padding: .8vw;
+  font-size: 1.2vw;
+  background-color: #DA0037;
+  color: white;
+  border: 0;
+  border-radius: 1vw;
+  cursor: pointer;
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body #container .tasks #addTasks:hover {
+  background: #d8c6cd;
+  -webkit-box-shadow: 3px 3px #ece6e6;
+          box-shadow: 3px 3px #ece6e6;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
