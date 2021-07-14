@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="Assets/CSS/responsividade.css">
 
-    <title>TO-DO</title>
+    <title>Lista de Tarefas</title>
 </head>
 <body>
     <div id="container">
@@ -17,9 +18,23 @@
         </div>
         <div class="tasks">
             <label class="sr-only" for="writeTasks">Para adicionar uma terefa, escreva aqui</label>
-            <input type="text" id="writeTasks" placeholder="Escreva aqui a sua tarefa">
-            <input type="button" value="Adicionar tarefas" id="addTasks">
+            <input type="text" class="writeTasks" placeholder="Escreva aqui a sua tarefa">
+            <input type="button" value="Adicionar tarefa" id="addTasks" role="button">
+        </div>
+        <div class="tasksToDo">
+            <div class="myTask">
+                <div class="checkbox">
+                    <label class="sr-only" for="check">Marcar como concluído?</label>
+                    <input type="checkbox" class="check">
+                </div>
+                <p>Andar de bicicleta com meu filho, ver filme com a esposa etc etc etc et</p>
+            </div>
+            <div class="delete">
+                <button class="delete-btn"><img src="Assets/Imagens/Lixo.png" alt="Apagar" width="80%" role="button"></button>
+            </div>
         </div>
     </div>
+
+    <script src="Assets/JavaScript/script.js"></script>
 </body>
 </html>

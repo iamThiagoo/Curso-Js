@@ -1,0 +1,42 @@
+/* Responsividade para mobile e tablet*/
+@media screen and (max-width:768px){
+    body #container{
+        padding: 20px;
+        width: 90%;
+    }
+    body #container #announced h1 {
+        font-size: 45px;
+    }
+    body #container #announced h2{
+        font-size: 20px;
+    }
+    body #container .tasks{
+        margin-top: 20px;
+    }
+    body #container .tasks .writeTasks {
+        font-size: 12px;
+    }
+    body #container .tasks #addTasks{
+        font-size: 12px;
+    }
+    #container .tasksToDo{
+        margin-top: 15px;
+    }
+    #container .tasksToDo .myTask .checkbox input[type=checkbox]{
+        width: 12px;
+        height: 12px;
+        margin-left: 5px;
+    }
+    #container .tasksToDo .myTask p{
+        font-size: 11px;
+        margin-left: 6px;
+        padding: 5px 0;
+    }
+    #container .tasksToDo .delete{
+        padding: 6px;
+    }
+    #container .tasksToDo .delete .delete-btn{
+        height: 22px;
+        width: 22px;
+    }
+}
