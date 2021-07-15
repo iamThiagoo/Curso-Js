@@ -19,7 +19,7 @@ function createLi(){
 function createButton(li) {
     li.innerText += ` `;
     const botaoApagaTarefa = document.createElement("button");
-    botaoApagaTarefa.innerText = `Apagar`;
+    botaoApagaTarefa.innerText = ``;
     botaoApagaTarefa.setAttribute("class", "apagar")
     botaoApagaTarefa.setAttribute("title", "Apagar essa tarefa?")
     li.appendChild(botaoApagaTarefa);
@@ -44,13 +44,14 @@ function saveTasks(){
     localStorage.setItem("tarefas", tarefasJSON);
 }
 
-function addSaveTasks(){
+function addSavedTasks(){
+    if(!localStorage.getItem("tarefas")) return;
     const pegandoTarefas = localStorage.getItem("tarefas");
     const lista = JSON.parse(pegandoTarefas);
     for (let i of lista){
         newTask(i);
     }
-} addSaveTasks();
+} addSavedTasks();
 
 btnAdiciona.addEventListener('click', function(){
     if (!escreveTarefa.value) return;
@@ -72,3 +73,10 @@ document.addEventListener("click", (e) => {
         saveTasks();
     }
 });
+
+try {
+    addSaveTasks();
+    console.log(`SEM ERRO!`);
+} catch(e){
+    console.log(`Tem algum erro aí`);
+}

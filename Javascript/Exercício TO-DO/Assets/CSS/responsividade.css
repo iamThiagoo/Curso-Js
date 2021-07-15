@@ -1,42 +1,47 @@
 /* Responsividade para mobile e tablet*/
-@media screen and (max-width:768px){
+@media screen and (max-width:600px){
     body #container{
-        padding: 20px;
-        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    body #container #announced h1 {
-        font-size: 45px;
+    body .imagem img{
+        width: 95%;
     }
-    body #container #announced h2{
-        font-size: 20px;
+    h1, h2{
+        text-align: center;
     }
-    body #container .tasks{
-        margin-top: 20px;
+    h1{
+        font-size: 30px;
     }
-    body #container .tasks .writeTasks {
+    h2{
         font-size: 12px;
     }
-    body #container .tasks #addTasks{
-        font-size: 12px;
+    body .container-list{
+        display: flex;
+        align-items: center;
     }
-    /*#container .tasksToDo{
+    .addToList{
         margin-top: 15px;
     }
-    #container .tasksToDo .myTask .checkbox input[type=checkbox]{
-        width: 12px;
-        height: 12px;
-        margin-left: 5px;
+    body .writeTasks{
+        font-size: 12px;
     }
-    #container .tasksToDo .myTask p{
-        font-size: 11px;
-        margin-left: 6px;
-        padding: 5px 0;
+    body #addTasks{
+        font-size: 8px;
     }
-    #container .tasksToDo .delete{
-        padding: 6px;
+    .container-items{
+        margin-top: 20px;
     }
-    #container .tasksToDo .delete .delete-btn{
-        height: 22px;
-        width: 22px;
-    }*/
+    button{
+        height: 25px;
+        width: 25px;
+    }
+    button::before{
+        font-size: 15px;
+    }
+    li{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
 }
