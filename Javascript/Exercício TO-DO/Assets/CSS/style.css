@@ -9,6 +9,7 @@
           box-sizing: border-box;
   text-decoration: none;
   outline: none;
+  list-style: none;
 }
 
 body {
@@ -121,7 +122,22 @@ body #container .tasks #addTasks:hover {
   color: black;
 }
 
-#container .tasksToDo{
+body #container .container-items{
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+li{
+  font-size: 2vw;
+  margin-top: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 2px solid #DA0037;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+/* #container .tasksToDo{
   margin-top: 1.5vw;
   background-color: #c9c3c3;
   display: flex;
@@ -129,10 +145,10 @@ body #container .tasks #addTasks:hover {
   align-items: center;
   padding: .8vw 1vw;
   border-radius: 10px;
-}
+} */
 
 /* Tarefas */
-#container .tasksToDo .myTask{
+/* #container .tasksToDo .myTask{
   display: flex;
   align-items: center;
 }
@@ -168,4 +184,4 @@ body #container .tasks #addTasks:hover {
 
 .delete-btn:hover{
   opacity: 0.8;
-}
+} */

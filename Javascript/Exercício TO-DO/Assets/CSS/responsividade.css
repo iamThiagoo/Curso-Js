@@ -19,7 +19,7 @@
     body #container .tasks #addTasks{
         font-size: 12px;
     }
-    #container .tasksToDo{
+    /*#container .tasksToDo{
         margin-top: 15px;
     }
     #container .tasksToDo .myTask .checkbox input[type=checkbox]{
@@ -38,5 +38,5 @@
     #container .tasksToDo .delete .delete-btn{
         height: 22px;
         width: 22px;
-    }
+    }*/
 }

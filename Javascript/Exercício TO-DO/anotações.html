@@ -1,4 +1,6 @@
-Anotações referentes ao exercício TO-DO:
+<!-- Anotações referentes ao exercício TO-DO:
+
+///////
 
 variável.addEventListener("keypress", function (e){ 
     console.log(e); 
@@ -6,3 +8,33 @@ variável.addEventListener("keypress", function (e){
 
 O keypress vai informar assim que a tecla foi pressionada através do console, keyup assim que ela foi pressionada e solta, e keydown apenas quando ela ainda tiver sendo 
 pressionada
+
+///////
+
+DICA: Usar addEventListener ao invés do onclick pois aí você terá duas coisas com que se estressar, com o HTML e com o JS.
+
+//////
+
+.focus = é o atributo que deixa o input piscando
+
+/////////
+
+setAttribute()
+
+// Para ver quem é o pai do elemento podemos fazer dentro de um addEventListener: 
+    const element = e.target;
+    console.log(elemento.parentElement); 
+
+    e para ver remover o pai usamos: elemento.parentElement.remove(); 
+
+// função .trim() remove os espaços da nossa string
+
+// JSON é usado para salvar dados entre sistemas 
+
+// localStorage é um local no navegador que serve para salvar dados
+    Para salvar dados será o seguinte: nós teremos uma variável JSON e usaremos o LocalStorage
+    ex: localStorage.setItem("tarefas", tarefasJSON);
+                            NOME QUE USAREMOS PARA BUSCAR A NOSSA VARIÁVEL DEPOIS
+                            E NOME DA VARIÁVEL
+-->
+
