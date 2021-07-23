@@ -30,3 +30,31 @@ executando(souUmDado);
 // 3° DENTRO DESSA FUNÇÃO, PEDIMOS QUE O NOSSO PARÂMETRO SEJA EXECUTADO
 // 4° EXECUTAMOS A NOSSA FUNÇÃO, MOSTRANDO QUAL VAI SER O PARÂMETRO DENTRO DELA, QUE POR COINCIDÊNCIA, VAI SER UMA FUNÇÃO.
 // 5° AÍ VAI EXECUTAR A FUNÇÃO QUE VAI POSSUIR UMA FUNÇÃO COMO PARÂMETRO, QUE VAI SER EXECUTADA DENTRO DESSA FUNÇÃO "EXECUTANDO()" QUANDO FOR CHAMADA
+
+
+// ARROW FUNCTION: Mais novo, sendo criado em 2015
+const muitoPrazer = () => {
+    console.log("Eaí Thiago, tudo certo?");
+}
+
+const olaVouExecutarSuaFunçao = (suaFuncao) => {
+    suaFuncao();
+}
+
+olaVouExecutarSuaFunçao(muitoPrazer);
+
+
+// Dentro de um objeto
+const pessoa = {
+    cumprimento: () => {
+        console.log(`Olá, tudo bem? Eu sou o Thiago`);
+    }
+}
+pessoa.cumprimento(); // Modo tradicional de fazer
+
+const pessoa = {
+    cumprimento() {
+        console.log(`Olá, tudo bem? Eu sou o Thiago`);
+    }
+}
+pessoa.cumprimento();
